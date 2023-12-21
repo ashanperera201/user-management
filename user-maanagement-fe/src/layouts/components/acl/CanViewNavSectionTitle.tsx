@@ -1,0 +1,19 @@
+
+import { ReactNode } from 'react'
+
+import { NavSectionTitle } from 'src/@core/layouts/types'
+
+interface Props {
+  children: ReactNode
+  navTitle?: NavSectionTitle
+}
+
+const CanViewNavSectionTitle = (props: Props) => {
+  // ** Props
+  const { children } = props
+
+  // return ability && ability.can(navTitle?.action, navTitle?.subject) ? <>{children}</> : null
+  return <>{children}</>;
+}
+
+export default CanViewNavSectionTitle
